@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo env.PATH
                 echo 'Starting Build'
 //                sh 'rm -rf build'
                 sh 'mkdir build'
