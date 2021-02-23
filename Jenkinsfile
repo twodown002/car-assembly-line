@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo env.PATH
                 echo 'Starting Build'
-//                sh 'rm -rf build'
+                sh 'rm -rf build'
                 sh 'mkdir build'
                 sh 'touch build/car.txt'
                 sh 'echo "chassis" > build/car.txt'
